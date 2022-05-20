@@ -412,7 +412,7 @@ pub(crate) fn ffi_to_shader_stage_flags(
     ReflectShaderStageFlags::from_bits(ffi_type as u32).unwrap()
 }
 
-pub(crate) fn ffi_to_type_flags(ffi_type: ffi::SpvReflectTypeFlagBits) -> ReflectTypeFlags {
+pub(crate) fn ffi_to_type_flags(ffi_type: ffi::SpvReflectTypeFlags) -> ReflectTypeFlags {
     ReflectTypeFlags::from_bits(ffi_type as u32).unwrap()
 }
 
