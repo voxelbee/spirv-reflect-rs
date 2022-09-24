@@ -18,14 +18,14 @@ fn main() {
 
     let target = env::var("TARGET").unwrap();
     if target.contains("darwin") {
-        build
-            .flag("-std=c++11")
-            .flag("-Wno-missing-field-initializers")
-            .flag("-Wno-sign-compare")
-            .flag("-Wno-deprecated")
-            .cpp_link_stdlib("c++")
-            .cpp_set_stdlib("c++")
-            .cpp(true);
+        //build
+            //.flag("-std=c++11")
+            //.flag("-Wno-missing-field-initializers")
+            //.flag("-Wno-sign-compare")
+            //.flag("-Wno-deprecated");
+            //.cpp_link_stdlib("c++")
+            //.cpp_set_stdlib("c++")
+            //.cpp(false);
     } else if target.contains("linux") {
         build.flag("-std=c++11").cpp_link_stdlib("stdc++").cpp(true);
     }
