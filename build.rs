@@ -27,7 +27,7 @@ fn main() {
             //.cpp_set_stdlib("c++")
             //.cpp(false);
     } else if target.contains("linux") {
-        build.flag("-std=c++11").cpp_link_stdlib("stdc++").cpp(true);
+        build.cpp_link_stdlib("stdc++").cpp(false);
     }
 
     build.compile("spirv_reflect_cpp");
